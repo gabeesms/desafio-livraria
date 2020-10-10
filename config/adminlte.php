@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>Livraria</b>ONLINE',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -385,6 +385,21 @@ return [
                     'type' => 'js',
                     'asset' => false,
                     'location' => '//unpkg.com/axios/dist/axios.min.js',
+                ],
+            ],
+        ],
+        'LightBox' => [
+            'active' => true,
+            'files' => [
+                [
+                    'type' => 'css',
+                    'asset' => true,
+                    'location' => '/vendor/lightbox/css/lightbox.css',
+                ],
+                [
+                    'type' => 'js',
+                    'asset' => true,
+                    'location' => '/vendor/lightbox/js/lightbox.js',
                 ],
             ],
         ],
