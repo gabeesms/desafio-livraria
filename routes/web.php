@@ -2,9 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','IndexController@index');
+Route::get('livro/{livro}', 'IndexController@livro')->name('detalhes.livro');
 
 Auth::routes([
     'register' => false
